@@ -1,0 +1,12 @@
+.container{
+    background-color: rgb(145, 142, 142);  
+    width: 50%; 
+    border-radius: 40px;
+    box-shadow: 4px 10px 12px rgba(0, 0, 0, 0.5);
+}
+.text-shadow {
+    text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.5);
+}
+.btn{
+    width: 100%;
+}

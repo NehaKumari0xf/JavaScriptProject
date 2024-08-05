@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Page Example</title>
+    <style>
+       #td
+       {
+        background-color: aqua;
+        color: red;
+        width: 100px;
+        
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+       } 
+    </style>
+    <script>
+        function dispalyTime()
+        {
+            var tdelemnt=document.getElementById("td");
+            var t=new Date();
+            tdelemnt.innerHTML=t.getHours()+":"+t.getMinutes()+":"+t.getSeconds();
+        }
+    </script>
+</head>
+<body onload="setInterval(dispalyTime,1000);">
+    <h1>07:04 AM</h1>
+    <h1 id="td"></h1>
+</body>
+</html>

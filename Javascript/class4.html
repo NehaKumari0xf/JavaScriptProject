@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+    <script>
+        function addOperation()
+        {
+            var e1=document.getElementById("n1");
+            var e2=document.getElementById("n2");
+            var v1=e1.value;
+            var v2=e2.value;
+            var vi1=parseFloat(v1);
+            var vi2=parseFloat(v2);
+            var r=vi1+vi2;
+            alert(r);
+        }
+        function reset()
+        {
+            var e1=document.getElementById("n1");
+            var e2=document.getElementById("n2");
+            e1.value="";
+            e2.value="";   
+        }
+    </script>
+</head>
+<body>
+    <h1>Addition</h1>
+    <label>Enter 1st number:</label><input type="number" id="n1"/>
+    <br/><label>Enter 2nd number:</label><input type="number" id="n2"/>
+    <br/><button onclick="addOperation();">Add</button><button onclick="reset();">Reset</button>
+</body>
+</html>

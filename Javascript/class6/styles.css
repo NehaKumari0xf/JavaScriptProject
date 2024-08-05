@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:black;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    background-color:whitesmoke;
+    border: 2px solid maroon;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: maroon;
+    margin: 20px;
+}
+label {
+    font-weight: bold;
+}
+td {
+    padding: 10px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid rgb(212, 201, 201);
+    border-radius: 4px;
+}
+
+.btn1 {
+    background-color: green;
+    color: whitesmoke;
+    border: none;
+    height: 40px;
+    width: 80px;
+    padding: 10px ;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ;
+}
+.btn1:hover {
+    background-color: rgb(48, 175, 48);
+}
+
+.btn2 {
+    background-color: red;
+    color: whitesmoke;
+    border: none;
+    height: 40px;
+    width: 80px;
+    padding: 10px ;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ;
+}
+
+.btn2:hover {
+    background-color:rgb(118, 10, 10);
+}
+
+#resultValue {
+    display: block;
+    margin-top: 10px;
+    color: blue;
+    font-size: 18px;
+}

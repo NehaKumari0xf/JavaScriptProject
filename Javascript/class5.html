@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operation</title>
+    <script>
+        function addition()
+        {
+            /*Access both input element*/
+            let e1=document.getElementById("n1");
+            let e2=document.getElementById("n2");
+            /*Access value from both input element*/
+            let v1=e1.value;
+            let v2=e2.value;
+            /* convert both string value in float value */
+            let fv1=parseFloat(v1);
+            let fv2=parseFloat(v2);
+            /* add both number*/
+            let result=fv1+fv2;
+            /*Diaply Result*/
+            /* Access result label*/
+            let rl=document.getElementById("rl");
+            rl.innerHTML=result;
+            rl.title="Addition";
+            let rml=document.getElementById("rml");
+            rml.innerHTML="Addition";
+
+        }
+        function subtraction()
+        {
+            /*Access both input element*/
+            let e1=document.getElementById("n1");
+            let e2=document.getElementById("n2");
+            /*Access value from both input element*/
+            let v1=e1.value;
+            let v2=e2.value;
+            /* convert both string value in float value */
+            let fv1=parseFloat(v1);
+            let fv2=parseFloat(v2);
+            /* add both number*/
+            let result=fv1-fv2;
+            /*Diaply Result*/
+            /* Access result label*/
+            let rl=document.getElementById("rl");
+            rl.innerHTML=result;
+            rl.title="Subtraction";
+            let rml=document.getElementById("rml");
+            rml.innerHTML="Subtraction";
+        }
+        function multiplication()
+        {
+            /*Access both input element*/
+            let e1=document.getElementById("n1");
+            let e2=document.getElementById("n2");
+            /*Access value from both input element*/
+            let v1=e1.value;
+            let v2=e2.value;
+            /* convert both string value in float value */
+            let fv1=parseFloat(v1);
+            let fv2=parseFloat(v2);
+            /* add both number*/
+            let result=fv1*fv2;
+            /*Diaply Result*/
+            /* Access result label*/
+            let rl=document.getElementById("rl");
+            rl.innerHTML=result;
+            rl.title="Multiplication";
+            let rml=document.getElementById("rml");
+            rml.innerHTML="Multiplication";
+        }
+        function division()
+        {
+            /*Access both input element*/
+            let e1=document.getElementById("n1");
+            let e2=document.getElementById("n2");
+            /*Access value from both input element*/
+            let v1=e1.value;
+            let v2=e2.value;
+            /* convert both string value in float value */
+            let fv1=parseFloat(v1);
+            let fv2=parseFloat(v2);
+            /* add both number*/
+            let result=fv1/fv2;
+            /*Diaply Result*/
+            /* Access result label*/
+            let rl=document.getElementById("rl");
+            rl.innerHTML=result;
+            rl.title="Division";
+            let rml=document.getElementById("rml");
+            rml.innerHTML="Division";
+
+        }
+        function reset()
+        {
+            let e1=document.getElementById("n1");
+            let e2=document.getElementById("n2");
+            let e3=document.getElementById("rl");
+            let e4=document.getElementById("rml");
+            e1.value="";
+            e2.value="";
+            e3.innerHTML="";
+            e4.innerHTML="";
+            e1.focus();
+        }
+    </script>
+</head>
+<body>
+    <h1>Arithmetic Operation</h1>
+    <table  width="400px" style="text-align: center;">
+        <tr>
+            <td><label>Enter 1st Number:</label></td>
+            <td><input type="number" id="n1"/></td>
+        </tr>
+        <tr>
+            <td><label>Enter 2nd number:</label></td>
+            <td><input type="number" id="n2"/></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                    <button onclick="addition();">Add</button>
+                    <button onclick="subtraction();">Sub</button>
+                    <button onclick="multiplication();">Mult</button>
+                    <button onclick="division();">Div</button>
+                    <button onclick="reset();">Reset</button>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Result</label></td>
+            <td><label id="rml" style="color:red; font-size: 10px;"></label><label id="rl" style="font-size: 22px; font-weight: bold; color: blue;"></label></td>
+        </tr>
+    </table>
+</body>
+</html>

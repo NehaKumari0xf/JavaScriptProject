@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Display Table</h1>
+        <table>
+            <tr>
+                <td>
+                    <label for="num">Enter your Table Number:</label>
+                </td>
+                <td>
+                    <input type="number" id="num" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="table();" onmouseenter="checkNumber();" class="btn1" title="Click this button to print your Table" id="ptbtn">Print</button>
+                </td>
+                <td>
+                    <button onclick="reset();" class="btn2">Reset</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Result</label>
+                </td>
+                <td>
+                    <label id="resultValue"></label>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
